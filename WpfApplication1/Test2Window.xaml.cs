@@ -10,28 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApplication1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Test2Window.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Test2Window : Window
     {
-        public MainWindow()
+        public Test2Window()
         {
             InitializeComponent();
         }
-
-        private void MyClickEvent(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        
-
-        
     }
 }

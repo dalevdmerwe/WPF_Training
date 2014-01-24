@@ -13,7 +13,7 @@
             <StackPanel Orientation="Horizontal">
                 <Button Content="Add"/>
                 <Button Content="Delete" />
-                <Button Content="Update" />
+                <Button Content="Update" Click="MyClickEvent"/>
             </StackPanel>
         </Grid>
     </Grid>
