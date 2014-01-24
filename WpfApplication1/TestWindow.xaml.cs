@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WpfApplication1
+namespace WPF_Training
 {
     /// <summary>
     /// Interaction logic for TestWindow.xaml
@@ -26,7 +26,10 @@ namespace WpfApplication1
 
         public void MyClickHandler(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Elzandria the Beautifull!", "Message", MessageBoxButton.OK, MessageBoxImage.Hand);
+            MessageBox.Show("Detail Message", "Message", MessageBoxButton.OK, MessageBoxImage.Hand);
         }
+
+        
+
     }
 }
