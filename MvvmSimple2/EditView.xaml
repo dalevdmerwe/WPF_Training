@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="MvvmSimple2.EditView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" IsEnabled="{Binding Enabled}"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal"/>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Height="20" Margin="5" Width="100">inputString</TextBlock>
+            <TextBox Height="20" Width="100" Margin="5" Text="{Binding Path=EditModel.InputString}"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Command="{Binding AddCommand}" Margin="5" Width="75" CommandParameter="{Binding}">Add</Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock  Margin="5" Text="{Binding DisplayMessage}" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="170">
+            <ListView Name="MyListView" ItemsSource="{Binding Path=ItemsCollection}"></ListView>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
