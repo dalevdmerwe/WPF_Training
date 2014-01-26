@@ -10,8 +10,8 @@
         <ListView Grid.Row="0" >
         </ListView>
         <Grid Grid.Row="1" Background="#FF75B16B">
-            <StackPanel Orientation="Horizontal">
-                <Button Content="Add"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <Button Content="Add" Command="{Binding AddCommand}"/>
                 <Button Content="Delete" />
                 <Button Content="Update" Click="MyClickEvent"/>
             </StackPanel>
